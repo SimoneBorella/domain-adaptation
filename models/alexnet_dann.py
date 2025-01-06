@@ -1,9 +1,9 @@
 import torch
 import torch.nn as nn
 
-class AlexNet(nn.Module):
+class AlexNetDANN(nn.Module):
     def __init__(self, num_classes=1000, num_domains=2):
-        super(AlexNet, self).__init__()
+        super(AlexNetDANN, self).__init__()
         self.features = nn.Sequential(
             nn.Conv2d(3, 64, kernel_size=11, stride=4, padding=2),
             nn.ReLU(inplace=True),
